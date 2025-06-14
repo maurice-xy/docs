@@ -38,6 +38,14 @@ If you _do_ have either {% data variables.copilot.copilot_pro_plus %} or {% data
 > [!NOTE]
 > You can check whether {% data variables.copilot.copilot_coding_agent %} has been enabled for you in the features page of your {% data variables.product.prodname_copilot_short %} settings: [github.com/settings/copilot/features](https://github.com/settings/copilot/features).
 
+## I have an {% data variables.product.prodname_emu %} account and {% data variables.product.prodname_copilot_short %} won't work in my personal repository
+
+{% data reusables.copilot.coding-agent-emu-limitation %}
+
+If you have an {% data variables.enterprise.prodname_managed_user %} and try to assign {% data variables.product.prodname_copilot_short %} to an issue in a personal repository, you may see an error message reporting that {% data variables.product.prodname_actions %} are not available for your repository.
+
+To use {% data variables.copilot.copilot_coding_agent %}, you'll need to work with repositories owned by your organization instead of personal repositories.
+
 ## {% data variables.product.prodname_copilot_short %} can't create a pull request from {% data variables.copilot.copilot_chat_short %}
 
 If you asked {% data variables.product.prodname_copilot_short %} to create a pull request and it responds that it cannot directly create a pull request, check that {% data variables.copilot.copilot_coding_agent %} is available.
@@ -75,7 +83,7 @@ If {% data variables.product.prodname_copilot_short %} got stuck while respondin
 
 {% data variables.product.prodname_actions %} workflows will not run automatically when {% data variables.product.prodname_copilot_short %} pushes changes to a pull request.
 
-To allow {% data variables.product.prodname_actions %} workflows to run, click the **Approve and run workflows** button in the pull request's merge box. See [AUTOTITLE](/copilot/using-github-copilot/coding-agent/using-copilot-to-work-on-an-issue#allowing-github-actions-workflows-to-run-when-copilot-pushes-changes).
+To allow {% data variables.product.prodname_actions %} workflows to run, click the **Approve and run workflows** button in the pull request's merge box. See [AUTOTITLE](/copilot/using-github-copilot/coding-agent/reviewing-a-pull-request-created-by-copilot).
 
 ## {% data variables.product.prodname_copilot_short %} is pushing changes which don't pass my CI checks
 
